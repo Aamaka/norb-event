@@ -46,3 +46,8 @@
 .input-container img{
     height: 16px;
 }
+
+.input-error-container {
+    height: 25px;
+    margin: 10px 0;
+}

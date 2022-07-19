@@ -15,14 +15,14 @@ const Login = () => {
       
     const handleChange = (e) => {
             setUserInput({...userInput, [e.target.name]:e.target.value})
-            cheeckIfFieldIsEmpty(e)
+            checkIfFieldIsEmpty(e)
     }
 
     const handleClick = () =>{
         console.log(userInput)
     }
 
-    const cheeckIfFieldIsEmpty = (e) => {
+    const checkIfFieldIsEmpty = (e) => {
         switch(e.target.name){
             case "email":
                 if(e.target.value === ""){
@@ -97,15 +97,9 @@ const Login = () => {
                         </p>
                     </div>
                     <div className="input-button-fields">
-                        <Input text="email" handleChange={handleChange} icon={emailIcon} label="email"/>
-                        <p className={fieldError.email.error ? "fieldError" : "noFieldError"}>
-                            {fieldError.email.message}
-                        </p>
-
-                        <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password"/>
-                        <p className={fieldError.password.error ? "fieldError" : "noFieldError"}>
-                            {fieldError.password.message}
-                        </p>
+                        <Input text="email" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
+                       
+                        <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password" fieldError={fieldError}/>
 
                         <button onClick={handleClick}>Get Into Norbs</button>
                     </div>

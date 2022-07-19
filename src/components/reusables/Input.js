@@ -1,17 +1,25 @@
 import "./reusable.css"
 
-const Input = ({text, handleChange, icon, label}) => {
+const Input = ({text, handleChange, icon, label, fieldError}) => {
   return (
-        <div className="input-container">
-            <div className="label-container">
-                <label>{label}</label>
+        <div>
+            <div className="input-container">
+                <div className="label-container">
+                    <label>{label}</label>
+                </div>
+                <input 
+                    name={label}
+                    type={text} 
+                    onChange={handleChange} />
+                <img src={icon} alt="input-icon"/>
+            
             </div>
-            <input 
-                name={label}
-                type={text} 
-                onChange={handleChange} />
-            <img src={icon} alt="input-icon"/>
-        
+            <div className="input-error-container">
+                <p className={fieldError[label].error ? "fieldError" : "noFieldError"}>
+                    {fieldError[label].message}
+                </p>
+            </div>
+
         </div>
     )
 }
