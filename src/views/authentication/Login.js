@@ -82,6 +82,7 @@ const Login = () => {
                 <div className="leftSide-container">
                     <a>
                         Dont have an account?
+                        
                         <span style={{
                             color : 'var(--primary_green)',
                             marginLeft: '4px'
