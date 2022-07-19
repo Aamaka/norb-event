@@ -6,7 +6,7 @@
     display: flex;
     align-items: center;
     position: relative;
-    margin: 20px 0;
+    /* margin: 20px 0; */
     justify-content: space-between;
     padding: 0 10px;
 }
