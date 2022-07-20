@@ -3,9 +3,10 @@ import emailIcon from "../../assets/email.svg"
 import passwordIcon from "../../assets/password.svg"
 import "./authentication.css"
 import { useState } from "react"
+import StepContainer from "./register/StepContainer"
 
 
-const Login = () => {
+const Register = () => {
     const[userInput, setUserInput] = useState({})
      const[fieldError, setFieldError] = useState({email: 
         {message:"", error: false},
@@ -95,13 +96,10 @@ const Login = () => {
                             We are an event management platform, aimed at helping you facilitate and run a smooth event
                         </p>
                     </div>
-                    <div className="input-button-fields">
-                        <Input text="email" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
-                       
-                        <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password" fieldError={fieldError}/>
+                    <StepContainer>
+                      <div>favour</div>
+                    </StepContainer>
 
-                        <button onClick={handleClick}>Get Into Norbs</button>
-                    </div>
                     <div className="social-media">
                         <a>
                             <div className="social-media-icon"></div>
@@ -118,4 +116,4 @@ const Login = () => {
        
     )
 }
-export default Login
+export default Register
