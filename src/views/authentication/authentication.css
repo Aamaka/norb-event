@@ -77,12 +77,17 @@
     border-radius: 4px;
     width: 100%;
     padding: 10px;
+    contain: content;
 }
 
 .step-icon{
     background-color: white;
     color: var(--primary_green);
-    width: 15%;
+    font-weight: bold;
+    font-size: 13px;
+    width: 12%;
     padding: 5px;
     border-radius: 4px;
+    text-align: center;
+    float: right;
 }
