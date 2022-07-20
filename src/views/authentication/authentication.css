@@ -80,6 +80,12 @@
     contain: content;
 }
 
+.registration-step-container .header-container{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+}
+
 .step-icon{
     background-color: white;
     color: var(--primary_green);
