@@ -96,7 +96,7 @@ const Register = () => {
                             We are an event management platform, aimed at helping you facilitate and run a smooth event
                         </p>
                     </div>
-                    <StepContainer>
+                    <StepContainer step={1}>
                       <div>favour</div>
                     </StepContainer>
 

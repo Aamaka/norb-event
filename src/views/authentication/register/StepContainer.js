@@ -3,7 +3,7 @@ import React from 'react'
 const StepContainer = ({children, step}) => {
   return (
     <div className='registration-step-container'>
-        <div>
+        <div className='step-icon'>
             {`Step ${step}`}
         </div>
         {children}

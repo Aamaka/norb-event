@@ -71,3 +71,7 @@
 .input-button-fields{
     margin: 3rem 0;
 }
+.step-icon{
+    background-color: white;
+    color: var(--primary_green);
+}
