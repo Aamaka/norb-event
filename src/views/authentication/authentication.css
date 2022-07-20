@@ -84,9 +84,18 @@
     display: flex;
     justify-content: space-between;
     width: 100%;
+    align-items: center;
+}
+
+.registration-step-container .header-container p{
+    color: var(--primary_green);
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0;
 }
 
 .step-icon{
+    height: min-content;
     background-color: white;
     color: var(--primary_green);
     font-weight: bold;
@@ -95,5 +104,4 @@
     padding: 5px;
     border-radius: 4px;
     text-align: center;
-    float: right;
 }
