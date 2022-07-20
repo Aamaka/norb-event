@@ -102,3 +102,10 @@
     border-radius: 4px;
     text-align: center;
 }
+
+.authentication-button-alternate{
+    background-color: white;
+    color: var(--primary_green);
+    font-size: 12px;
+    font-weight: bold;
+}

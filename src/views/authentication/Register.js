@@ -114,7 +114,24 @@ const Register = () => {
                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
 
                     </StepContainer>}
-                    <button style={{width: '65%'}} className="authentication-button" onClick={handleClick}>Get Into Norbs</button>
+
+                    {step === 1 && <button onClick={()=> setStep(2)} style={{width: '65%'}} className="authentication-button" >
+                      Next Step
+                    </button>}
+
+                    {step === 2 &&
+                      <div style={
+                        {display: "flex", justifyContent: "space-between"}
+                      }>
+
+                      <button onClick={()=> setStep(1)} style={{width: '45%'}} className="authentication-button-alternate">
+                        Go Back
+                      </button>
+
+                      <button style={{width: '45%'}} className="authentication-button" onClick={handleClick}>
+                        Register
+                      </button>
+                    </div>}
 
                     <div className="social-media">
                         <a>
