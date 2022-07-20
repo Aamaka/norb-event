@@ -1,12 +1,10 @@
 .input-container{
     height: 50px;
-    width: 330px;
     border: 2px solid var(--primary_green);
     border-radius: 3px;
     display: flex;
     align-items: center;
     position: relative;
-    /* margin: 20px 0; */
     justify-content: space-between;
     padding: 0 10px;
 }

@@ -73,23 +73,21 @@
 }
 
 .registration-step-container{
-    border: 1px solid lightgray;
     border-radius: 4px;
-    width: 100%;
-    padding: 10px;
-    contain: content;
+    margin-top: 2rem;
+    width:65%;
 }
 
 .registration-step-container .header-container{
     display: flex;
     justify-content: space-between;
-    width: 100%;
     align-items: center;
+    margin-bottom: 1rem;
 }
 
 .registration-step-container .header-container p{
     color: var(--primary_green);
-    font-size: 14px;
+    font-size: 12px;
     font-weight: bold;
     margin: 0;
 }

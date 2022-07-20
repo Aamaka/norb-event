@@ -97,7 +97,10 @@ const Register = () => {
                         </p>
                     </div>
                     <StepContainer step={1} headTitle="Let's know you ">
-                      <div>favour</div>
+                      <Input text="email" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
+                       
+                        <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password" fieldError={fieldError}/>
+                      
                     </StepContainer>
 
                     <div className="social-media">
