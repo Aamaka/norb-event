@@ -108,7 +108,7 @@ const Register = () => {
                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
                     </StepContainer>}
 
-                    {step === 2 && <StepContainer step={2} headTitle="Let's secure you ">
+                    {step === 2 && <StepContainer step={2} headTitle="Let's Secure your Details ">
                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="firstName" fieldError={fieldError}/>
                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="lastName" fieldError={fieldError}/>
                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
