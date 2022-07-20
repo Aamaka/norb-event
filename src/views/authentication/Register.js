@@ -8,10 +8,16 @@ import StepContainer from "./register/StepContainer"
 
 const Register = () => {
     const[userInput, setUserInput] = useState({})
-     const[fieldError, setFieldError] = useState({email: 
-        {message:"", error: false},
-        password: {message:"", error: false}
-    })
+    const[step, setStep] = useState(1)
+    const[fieldError, setFieldError] = useState(
+      {
+        firstName:{message:"", error: false},
+        lastName:{message:"", error: false},
+        email: {message:"", error: false},
+        password:{message:"", error: false},
+        confirmPassword:{message:"", error: false},
+      }
+    )
       
     const handleChange = (e) => {
             setUserInput({...userInput, [e.target.name]:e.target.value})
@@ -81,13 +87,13 @@ const Register = () => {
                
                 <div className="leftSide-container">
                     <a>
-                        Dont have an account?
+                        have an account?
                         
                         <span style={{
                             color : 'var(--primary_green)',
                             marginLeft: '4px'
                             }}>
-                            sign up
+                            Login in
                         </span>
                     </a>
                     <div className="welcome-text">
@@ -96,12 +102,19 @@ const Register = () => {
                             We are an event management platform, aimed at helping you facilitate and run a smooth event
                         </p>
                     </div>
-                    <StepContainer step={1} headTitle="Let's know you ">
-                      <Input text="email" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
-                       
-                        <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password" fieldError={fieldError}/>
-                      
-                    </StepContainer>
+                    {step === 1 && <StepContainer step={1} headTitle="Let's know you ">
+                       <Input text="text" handleChange={handleChange} icon={emailIcon} label="firstName" fieldError={fieldError}/>
+                       <Input text="text" handleChange={handleChange} icon={emailIcon} label="lastName" fieldError={fieldError}/>
+                       <Input text="text" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
+                    </StepContainer>}
+
+                    {step === 2 && <StepContainer step={2} headTitle="Let's secure you ">
+                       <Input text="text" handleChange={handleChange} icon={emailIcon} label="firstName" fieldError={fieldError}/>
+                       <Input text="text" handleChange={handleChange} icon={emailIcon} label="lastName" fieldError={fieldError}/>
+                       <Input text="text" handleChange={handleChange} icon={emailIcon} label="email" fieldError={fieldError}/>
+
+                    </StepContainer>}
+                    <button style={{width: '65%'}} className="authentication-button" onClick={handleClick}>Get Into Norbs</button>
 
                     <div className="social-media">
                         <a>

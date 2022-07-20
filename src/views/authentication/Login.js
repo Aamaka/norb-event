@@ -100,7 +100,7 @@ const Login = () => {
                        
                         <Input text="password" handleChange={handleChange} icon={passwordIcon} label="password" fieldError={fieldError}/>
 
-                        <button onClick={handleClick}>Get Into Norbs</button>
+                        <button className="authentication-button" onClick={handleClick}>Get Into Norbs</button>
                     </div>
                     <div className="social-media">
                         <a>
