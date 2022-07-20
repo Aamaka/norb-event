@@ -71,7 +71,18 @@
 .input-button-fields{
     margin: 3rem 0;
 }
+
+.registration-step-container{
+    border: 1px solid lightgray;
+    border-radius: 4px;
+    width: 100%;
+    padding: 10px;
+}
+
 .step-icon{
     background-color: white;
     color: var(--primary_green);
+    width: 15%;
+    padding: 5px;
+    border-radius: 4px;
 }
