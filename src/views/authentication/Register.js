@@ -4,6 +4,7 @@ import passwordIcon from "../../assets/password.svg"
 import "./authentication.css"
 import { useState } from "react"
 import StepContainer from "./register/StepContainer"
+import {useNavigate} from "react-router-dom";
 
 
 const Register = () => {
@@ -19,6 +20,7 @@ const Register = () => {
         confirmPassword:{message:"", error: false},
       }
     )
+    let navigate = useNavigate();
       
     const handleChange = (e) => {
             setUserInput({...userInput, [e.target.name]:e.target.value})
@@ -27,6 +29,7 @@ const Register = () => {
 
     const handleClick = () =>{
         console.log(userInput)
+        navigate("/Login")
     }
 
     const checkIfFieldIsEmpty = (e) => {

@@ -1,15 +1,22 @@
 
-import './App.css';
-import Login from './views/authentication/Login';
-import Register from './views/authentication/Register';
 
-function App() {
-  return (
-    <div className="App">
-      {/* <Login/> */}
-      <Register/>
+import Login from "./views/authentication/Login";
+import "./App.css"
+import Register from "./views/authentication/Register";
+import { BrowserRouter as Router,Routes,Route } from "react-router-dom";
+
+const App=()=>{
+  return(
+    <div className="app">
+      <Router>
+        <Routes>
+          <Route path="/login" element={<Login/>}/>
+          <Route path="/" element={<Register/>}/>
+        </Routes>
+      </Router>
+  
     </div>
-  );
-}
+  )
 
-export default App;
+}
+export default App
