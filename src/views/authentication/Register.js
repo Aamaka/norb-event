@@ -90,7 +90,7 @@ const Register = () => {
             <div className="leftSide">
                
                 <div className="leftSide-container">
-                    <a>
+                    <a onClick={() => navigate("/login")}>
                         have an account?
                         
                         <span style={{
