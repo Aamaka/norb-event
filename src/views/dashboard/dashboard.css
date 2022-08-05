@@ -19,6 +19,7 @@
     width: inherit;
     height: 100vh;
     background-color: var(--dashboard_accent);
+    
 }
 
 .sideNavLogoSection{
@@ -39,3 +40,24 @@
     font-size: 18px;
     border-radius: 6px;
 }
+.sideNavLinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 20vh;
+}
+
+.sideNavLinks > .links > .link{
+    width: 60%;
+    height: 5vh;
+    font-size: 14px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0. 23px;
+    background-color: transparent;
+    border: unset;
+    cursor: pointer;
+    text-transform: capitalize;
+} 
