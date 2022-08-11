@@ -8,13 +8,13 @@ const SideNav = () => {
   let activeStyle = {
     backgroundColor: "#474747", color: 'var(--primary_green)'
   }
-  // let activeIconStyle ={
-  //   color: 'var(--primary_green)'
-  // }
+ 
 
+  const links = ["events", "analytics", "markertin"]
   function toggleWidth(){
     width === "20%" ? setWidth("10%") : setWidth("20%")
   }
+  
   return (
     <div className='dashboardSideNav' style={{width: width}}>
 
@@ -31,12 +31,18 @@ const SideNav = () => {
       </div>
       <div className='sideNavLinks'>
         <div className='links'>
-          <button className='link'
-            onClick={() => setActiveLink("events")}
-            style={activeLink === "events" ? activeStyle : {color: 'white'}}>
-            <BsFillWalletFill color={activeLink ? 'var(--primary_green)': 'white'}/> 
-            events
-          </button>
+          {links.map((link, index) =>
+            <button className='link'
+              key={index}
+              onClick={() => setActiveLink(link)}
+              style={activeLink === link ? activeStyle : {color: 'white'}}>
+              <BsFillWalletFill fontSize={20} 
+                style={{marginRight : "20px"}}
+                color={activeLink === link ? 'var(--primary_green)': 'white'}
+              /> 
+              {link}
+            </button>
+          )}
 
         </div>
         
