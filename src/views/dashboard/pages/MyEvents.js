@@ -3,16 +3,17 @@ import "./myEvents.css"
 
 const MyEvents = () => {
   return (
-    <div>
+    <div className='my-events-container'>
       <div className='my-events-header'>
         <div className='my-events-header-filter'>
-          <input type="date"/>
-
-        </div>
-        <div className='my-events-header-search'>
-          <input type="search"/>
-
-
+          <div>
+            <p>Filter by date:</p>
+            <input type="date" id='filter-date'/>
+          </div>    
+          <div>
+            <p>Search Events</p>
+            <input type="search" id='filter-search'/>
+          </div>
         </div>
         <button>Create Eveent</button>
       </div>
