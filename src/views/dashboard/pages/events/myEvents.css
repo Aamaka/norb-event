@@ -50,3 +50,54 @@
     margin-top: 5px;
     width: 30em;
 }
+
+.my-events-cards{
+  padding: 5px;
+  margin-top: 2em;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.event-card{
+    position: relative;
+    height: 20vh;
+    border-radius: 6px;
+    background-color: white;
+    width: 20vw;
+    contain: content;
+    display: flex;
+}
+
+.event-actions{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.image-container{
+    height: 100%;
+    width: 30%;
+    background-size: contain;
+    background: round;
+}
+.event-action > button{
+    background-color: var(--primary_main);
+    color: white;
+    border-radius: 4px;
+    padding: 10px 20px;
+    border: unset;
+    cursor: pointer;
+}
+.event-details p{
+    color: rgb(80, 80, 80);
+    font-size: 12px;
+    margin: 0;
+
+}
+.event-details h5{
+    color: var(--dashboard_main);
+    font-size: 14px;
+    margin-top: 3px;
+}
+.event-details{
+    padding: 10px;
+}

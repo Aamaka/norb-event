@@ -47,5 +47,22 @@
         "number_of-seats" : "",
         "available_tickets" : ""
     }
+  ],
+
+  "fakeEvents": [
+    {
+      "title": "Alakija",
+      "description" : "today is the day the lord has made"
+    },
+
+    {
+      "title": "Norbs",
+      "description" : "Get together land"
+    },
+
+    {
+        "title": "Ujay",
+      "description" : "today is the day the lord has made"
+    }
   ]
 }
