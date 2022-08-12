@@ -1,0 +1,37 @@
+{
+  "accounts": [
+    {
+      "firstName": "Amaka",
+      "lastName": "bae",
+      "email": "ezeirunnechiamaka@gmail.com",
+      "phone": "458906543",
+      "password": "Amara",
+      "confirmPassword": "Amara",
+      "id": 1
+    },
+    {
+      "firstName": "Faith",
+      "lastName": "Peace",
+      "email": "ezeirunnechiamaka@gmail.com",
+      "phone": "25773879379",
+      "password": "amara",
+      "confirmPassword": "amara",
+      "id": 2
+    }
+  ],
+
+  "events": [
+    {
+        "date_created" : "2015-12-23",
+        "date_updated" : "2015-12-23",
+        "location" : "",
+        "venue" : "",
+        "stop_time": "",
+        "start_time": "",
+        "description" : "",
+        "event_date" : "",
+        "user": "" ,
+        "host": ""
+    }
+  ]
+}

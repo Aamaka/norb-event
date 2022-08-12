@@ -5,6 +5,7 @@ import "./authentication.css"
 import { useState } from "react"
 import StepContainer from "./register/StepContainer"
 import {useNavigate} from "react-router-dom";
+import axios from "axios"
 
 
 const Register = () => {
@@ -26,11 +27,19 @@ const Register = () => {
             setUserInput({...userInput, [e.target.name]:e.target.value})
             checkIfFieldIsEmpty(e)
     }
-
-    const handleClick = () =>{
-        console.log(userInput)
-        navigate("/Login")
+    const handleClick = ()=>{
+        
+        axios.post(`http://localhost:5000/accounts`, userInput).
+        then((data) => {
+            console.log(data)
+        }).
+        catch((error) => console.log(error))
     }
+
+    // const handleClicks = () =>{
+    //     console.log(userInput)
+    //     navigate("/Login")
+    // }
 
     const checkIfFieldIsEmpty = (e) => {
         switch(e.target.name){
@@ -114,8 +123,8 @@ const Register = () => {
 
                     {step === 2 && <StepContainer step={2} headTitle="Let's Secure your Details ">
                        <Input text="text" handleChange={handleChange} icon={emailIcon} label="phone" fieldError={fieldError}/>
-                       <Input text="text" handleChange={handleChange} icon={emailIcon} label="password" fieldError={fieldError}/>
-                       <Input text="text" handleChange={handleChange} icon={emailIcon} label="confirmPassword" fieldError={fieldError}/>
+                       <Input text="password" handleChange={handleChange} icon={emailIcon} label="password" fieldError={fieldError}/>
+                       <Input text="password" handleChange={handleChange} icon={emailIcon} label="confirmPassword" fieldError={fieldError}/>
 
                     </StepContainer>}
 
