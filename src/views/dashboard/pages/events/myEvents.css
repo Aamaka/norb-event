@@ -22,7 +22,7 @@
 .my-events-header-filter{
     display: flex;
     justify-content: space-between;
-    width: 50%;
+    width: 60%;
 }
 
 #filter-date{
